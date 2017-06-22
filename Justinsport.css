@@ -3,10 +3,11 @@
 	font-family: Futura;
 	display: inline-block;
 	height: 70px;
-	width: 50%;
+	width: 100%;
 	background-color: #F8F8FF;
 	margin: 0;
-	opacity: 0.5;
+	opacity:0.6;
+	
 }
 
 
@@ -17,6 +18,7 @@
 	line-height: 70px;
 	margin-left: 30px;	
 	color: black;
+	
 }
 
 body {
@@ -35,7 +37,6 @@ body {
 	width: 50%;
 	background-color: #F8F8FF;
 	margin: 0;
-	opacity: 0.5;
 }
 
 /* top right nav bar menu link text attributes */
@@ -56,16 +57,15 @@ div a {
 
 /* main background wallpaper and attributes */
 #background1 {
-	background: url("Port Images/backgroundblur.jpg");
+	background: url("Port Images/office_desk.jpg");
     height: 100vh;
-    position: relative;
-    text-align: center;
     width: 100%;
     min-height: 350px;
-    background-color: #2A3A3F;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+	position:relative;
+
 }
 #background2 {
 	
@@ -122,6 +122,7 @@ img {
 #content1 {
 	
     min-height: calc(100vh - 100px);
+	position:relative;
 	
 	
 }
@@ -212,23 +213,30 @@ img {
 	font-family: 'Montserrat', sans-serif;
 	padding: 10px;
 	font-weight: 700;
+	
 
 }
 .rw-sentence{
 	margin: 0;
 	text-align: left;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	
 }
 .rw-sentence span{
 	color: white;
 	white-space: nowrap;
 	font-size: 250%;
 	font-weight: 700;
+	
+	
+	
 }
 
 .rw-words{
 	display: inline;
 	text-indent: 10px;
+	
+	
+	
 }
 
 .rw-words span{
@@ -236,22 +244,25 @@ img {
 	opacity: 0;
 	overflow: hidden;
 	width: 75%;
-	color: #6b969d;
+	color: white;
+	
+	
+
 }
 
 .rw-words-1 span{
-	animation: rotateWordsFirst 12s linear infinite 0s;
+	animation: rotateWordsFirst 21s linear infinite 0s;
 }
 .rw-words-2 span{
-	animation: rotateWordsSecond 12s linear infinite 0s;
+	animation: rotateWordsSecond 21s linear infinite 0s;
 }
 .rw-words span:nth-child(2) { 
-	animation-delay: 4s; 
-	color: #6b889d;
+	animation-delay: 7s; 
+	color: white;
 }
 .rw-words span:nth-child(3) { 
-	animation-delay: 8s; 
-	color: #6b739d;	
+	animation-delay: 14s; 
+	color: white;	
 }
 
 @keyframes rotateWordsFirst {
@@ -295,7 +306,7 @@ img {
     border-bottom: none;
     font-family: 'Bungee Shade';
     transition: all .3s ease-in-out;
-    font-weight: 300;
+    font-weight: 400;
 	font-size:30px;	
 	
 }
@@ -304,11 +315,30 @@ a {
 	
 }
 
+.fa-chevron-down:before {
+    content: "\f078";
+   
+  
+}
+
 
 
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+	
+}
+
+.down1 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+	
+}
+
+.fa-chevron-down1:before {
+    content: "\f078";
+	padding-left:110px;
+  
 }
 
 
@@ -427,12 +457,5 @@ p.intro{
     text-shadow: 2px 2px 4px #000000;	
 	
 }
-
-
-
-
-
-
-
 
 
