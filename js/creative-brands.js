@@ -1,12 +1,3 @@
-/*----------------------------------------------------
- * Copyright 2014 Pixelized Studio
- * http://www.pixelized.cz
- * creative-brands.js
- *
- * Version 1.2
- * Released: 17.6.2014
- * http://creativecommons.org/licenses/by/2.0/
-----------------------------------------------------*/
 
 $(document).ready(function() {
 	if($(window).width() > 767) {
