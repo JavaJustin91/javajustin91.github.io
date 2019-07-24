@@ -62,7 +62,7 @@
                 
                     <ul class="nav navbar-nav navbar-right animated flipInX">
                         <li><a href="#about" class="scroll">About me</a></li>
-                        <li><a href="#reference" class="scroll">Previous Projects</a></li>
+<!--                        <li><a href="#reference" class="scroll">Previous Projects</a></li>-->
                         <li><a href="#contact" class="scroll">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -169,15 +169,15 @@
                 
                 <div class="col-md-3 service scrollpoint sp-effect1">
                 <i class="fa fa-coffee skills" aria-hidden="true"></i>
-                <h3>Java</h3>
-                <p>Diverse experience utilizing Java tools in business, Web, and client-server environments. I work with clients and peers to transform ideas into well thought out and structured code.</p>
+                <h3>Back End</h3>
+                <p>Diverse experience utilizing Java & PHP in business, Web, and client-server environments. I work with clients and peers to transform ideas into well thought out and structured code.</p>
                 </div>
                 
                 
                 <div class="col-md-3 service scrollpoint sp-effect1">
                 <i class="fa fa-database skills" aria-hidden="true"></i>
                 <h3>Database Servers</h3>
-                <p>I sketch and connect interfaces to databases focusing on content structure, intuitive patterns, and simple interactions to make clean and organized syntax. </p>
+                <p>Experience using MySQL & PostgreSQL to sketch and connect interfaces to databases with a focus on content structure and intuitive patterns. </p>
                 </div>
                 
                 
@@ -189,25 +189,27 @@
                 
                 <div class="col-md-3 service scrollpoint sp-effect2">
                 <i class="fa fa-code skills" aria-hidden="true"></i>
-                <h3>Front-end</h3>
-                <p>I design in the browser with HTML, CSS, and JavaScript. I love developing from the bottom up, but I can work with pre-designed front-end frameworks as well.</p>
+                <h3>Front End</h3>
+                <p>I design in the browser with HTML/CSS, Angular/AngularJS, and vanilla JavaScript. I love developing from the bottom up, but can work with pre-designed front-ends as well.</p>
                 </div>
                 
             </div>
             
 
+<!--
               <div class="row">
             	<div class="col-md-12 text-center">
                 	<a id="skills-toggle" class="btn btn-primary"><i class="fa fa-arrow-circle-o-down"></i> Check my skills</a>
                 </div>
             </div>
+-->
             
 
             
         </div>
             
+<!--
        
-        
         <div id="skills">
             <div class="container">   
                 <div class="row">
@@ -227,6 +229,7 @@
             </div>
         </div>
         
+-->
         
 
          </section>
@@ -241,6 +244,7 @@
     	QUOTES - START
     =========================== -->   
 
+<!--
     <section id="quotes" class="content-first">
         <div class="container">
             <div class="row scrollpoint sp-effect3">
@@ -253,6 +257,7 @@
             </div>
         </div>
     </section>
+-->
 
     <!-- ==========================
     	QUOTES - END 
@@ -261,6 +266,7 @@
     <!-- ==========================
     	PROJECT - START
     =========================== -->
+<!--
     <section id="reference" class="content-second">
         <h2 class="scrollpoint sp-effect3">Some Previous Projects</h2>
         <p class="scrollpoint sp-effect3"></p> 
@@ -291,6 +297,7 @@
 			</ul>
     
 	</section>
+-->
     <!-- ==========================
     	PROJECT - END 
     =========================== -->
@@ -394,23 +401,13 @@
                                     </div>
                                 </form>
 
-                                
-<!--
-                                <form action="https://formspree.io/javajustin91@gmail.com"
-                                      method="POST">
-                                    <input type="text" name="name">
-                                    <input type="email" name="_replyto">
-                                        <input type="submit" value="Send">
-                                </form>
--->
-                                
                             </div>
                             <div class="col-sm-4">
                             
                             <img src="image/me.jpg" class="contact-image image-responsive hidden-xs hidden-sm" alt="" />
                             	<div class="contact-info">
                                 	<p>Justin Jones</p>
-                                    <p>Medina, OH 44256</p>
+                                    <p>Medina, OH</p>
                                 </div>
                             </div>
                     	</div>
@@ -460,49 +457,5 @@
     <script src="js/jquery.countTo.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/custom.js"></script>
-<!--
-    <script>
-    $(function () { 
-		$("input,textarea").jqBootstrapValidation({
-        	preventSubmit: true,
-			
-			submitSuccess: function($form, event) {
-				event.preventDefault(); // prevent default submit behaviour
-				// get values from FORM
-				var firstname = $("input#firstname").val();
-				var lastname = $("input#lastname").val();
-				var email = $("input#email").val();
-				var message = $("textarea#message").val();
-	
-				$.ajax({
-					url: "send.php",
-					type: "POST",
-					data: {
-						firstname: firstname,
-						lastname: lastname,
-						email: email,
-						message: message
-					},
-					cache: false,
-					success: function() {
-						// Success message
-						$('.contact-alert').html("<div class='alert alert-success'>");
-						$('.contact-alert > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Your message has been sent.</strong></div>");
-						//clear all fields
-						$('#contactForm').trigger("reset");
-					},
-					error: function() {
-						// Fail message
-						$('.contact-alert').html("<div class='alert alert-danger'>");
-						$('.contact-alert > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'><i class='fa fa-times'></i></button><strong>Sorry, it seems that my mail server is not responding. Please try again later!</strong></div>");
-						//clear all fields
-						$('#contactForm').trigger("reset");
-					},
-				})
-			}
-		});
-	});
-    </script>
--->
 </body>
 </html>
